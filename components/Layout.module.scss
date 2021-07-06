@@ -1,0 +1,23 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #f6f6ef;
+
+  nav {
+    background: #f60;
+    padding: 1em;
+
+    a {
+      text-decoration: none;
+    }
+
+    & > * {
+      display: inline-block;
+      color: black;
+    }
+  }
+
+  &__maintitle {
+    font-weight: bold;
+  }
+}

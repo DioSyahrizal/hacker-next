@@ -1,0 +1,41 @@
+.story {
+  padding: 0 1em;
+  &__wrapper {
+    padding: 1em 0;
+  }
+
+  &__list {
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 0.5em;
+
+    &:hover {
+      text-decoration: underline;
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+  }
+
+  &__details {
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    span {
+      margin-right: 1em;
+    }
+    a {
+      color: #6600ff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
