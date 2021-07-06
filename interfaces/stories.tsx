@@ -32,4 +32,15 @@ export interface Comment {
   time: number;
   time_ago: string;
   user: string;
+  comments: InsideComment[];
+}
+
+export interface InsideComment {
+  comments: any[];
+  content: string;
+  id: number;
+  level: number;
+  time: number;
+  time_ago: string;
+  user: string;
 }

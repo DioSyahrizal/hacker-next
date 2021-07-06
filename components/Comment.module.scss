@@ -1,0 +1,32 @@
+.comment {
+  margin-bottom: 1.5em;
+
+  &__user {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+
+  &__content {
+    font-size: 0.9rem;
+    p {
+      margin: 0;
+      margin-bottom: 0.5em;
+      word-wrap: break-word;
+    }
+    a {
+      color: #f60;
+      text-decoration: underline;
+    }
+    pre {
+      max-width: 100%;
+      overflow: scroll;
+    }
+  }
+
+  &__nested {
+    margin-top: 1em;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 1em;
+  }
+}

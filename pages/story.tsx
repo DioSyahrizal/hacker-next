@@ -7,6 +7,7 @@ import { CommentStory } from "../interfaces/stories";
 import Layout from "../components/Layout";
 
 import styles from "../styles/Story.module.scss";
+import CommentList from "../components/CommentList";
 
 interface Props {
   story: CommentStory;
@@ -27,6 +28,10 @@ const Story: NextPage<Props> = ({ story }) => {
           <strong>{story.comments_count} comments</strong>
           <strong>{story.time_ago}</strong>
         </div>
+
+        {story.comments.length > 0 ? (
+          <CommentList comments={story.comments} />
+        ) : null}
       </main>
     </Layout>
   );
