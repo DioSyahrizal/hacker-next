@@ -18,7 +18,7 @@ const Story: NextPage<Props> = ({ story }) => {
     return <Error statusCode={503} />;
   }
   return (
-    <Layout title={story.title} description="Comment">
+    <Layout title={story.title} description="Comment" backButton>
       <main className={styles.story}>
         <h1 className={styles.story__title}>
           <a href={story.url}>{story.title}</a>
