@@ -37,7 +37,7 @@ const Story: NextPage<Props> = ({ story }) => {
   );
 };
 
-Story.getInitialProps = async ({ req, res, query }) => {
+Story.getInitialProps = async ({ query }) => {
   const storyId = query.id;
   let story;
   try {

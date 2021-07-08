@@ -35,7 +35,7 @@ const Index: NextPage<Props> = ({ stories, page }) => {
   );
 };
 
-Index.getInitialProps = async function ({ req, res, query }) {
+Index.getInitialProps = async function ({ query }) {
   let stories = [];
   let page = Number(query.page) || 1;
   try {
